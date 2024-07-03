@@ -1,0 +1,15 @@
+<table border="1">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Number of times Duplicates</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let entry of nameCounts" [ngClass]="getRowClass(entry.count)">
+        <td>{{ entry.name }}</td>
+        <td>{{ entry.count }}</td>
+      </tr>
+    </tbody>
+  </table>
+  
